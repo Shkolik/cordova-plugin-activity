@@ -1,5 +1,5 @@
 /*
- Copyright 2019 Selerix Systems Inc.
+ Copyright 2020 Selerix Systems Inc.
 
  Licensed under MIT.
 
@@ -22,29 +22,20 @@ package com.selerix.cordova.plugin;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
-import org.apache.cordova.PluginResult;
 import org.apache.cordova.LOG;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.annotation.TargetApi;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.provider.Browser;
-import android.os.Parcelable;
-import android.net.Uri;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.os.Bundle;
 
 @TargetApi(19)
 public class Activity extends CordovaPlugin {
 
     private static final String LOG_TAG = "Activity";
     private static final String MESSAGE_TASK = "Cordova Android Activity.getExtras() called.";
-    private static final String MESSAGE_ERROR = "Error ";
 
     @Override
     public boolean execute(final String action, final JSONArray args, final CallbackContext callbackContext)

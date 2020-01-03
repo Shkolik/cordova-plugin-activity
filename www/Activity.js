@@ -1,6 +1,6 @@
 //////////////////////////////////////////
-// Cache.js
-// Copyright (C) 2019 Selerix Systems Inc.
+// Activity.js
+// Copyright (C) 2020 Selerix Systems Inc.
 //
 //////////////////////////////////////////
 var exec = require('cordova/exec');
