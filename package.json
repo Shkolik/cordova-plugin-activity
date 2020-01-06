@@ -13,7 +13,8 @@
   "cordova": {
     "id": "com.selerix.cordova.plugin.activity",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "keywords": [

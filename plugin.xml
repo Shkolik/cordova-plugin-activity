@@ -30,20 +30,21 @@
     </platform>
 
     <!-- ios -->
-   <!--  <platform name="ios">
-        <js-module src="www/Opener.js" name="Opener">
-            <clobbers target="Opener" />
+    <platform name="ios">
+        <js-module src="www/Activity.js" name="Activity">
+            <clobbers target="Activity" />
         </js-module>
 
         <config-file target="config.xml" parent="/*">
-            <feature name="Opener">
-                <param name="ios-package" value="Opener" />
+            <feature name="Activity">
+                <param name="ios-package" value="Activity" />
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/Opener.h" />
-        <source-file src="src/ios/Opener.m" />
+        <header-file src="src/ios/Activity.h" />
+        <source-file src="src/ios/Activity.m" />
     </platform>
- -->
+
     
 </plugin>
