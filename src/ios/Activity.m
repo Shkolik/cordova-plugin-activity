@@ -35,7 +35,7 @@
 - (void)finishLaunching:(NSNotification *)notification
 {
     // Put here the code that should be on the AppDelegate.m
-    _extras = notification.userInfo;
+    _extras = [notification.userInfo mutableCopy];
 }
 
 - (void)getExtras:(CDVInvokedUrlCommand*)command
@@ -43,6 +43,8 @@
 	NSLog(@"Cordova iOS Activity.getExtras() called.");
     if(_extras != nil)
     {
+        NSLog(@"Application extras: %@", _extras);
+        
         NSDictionary* options = [self extras];
         CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:options];
 
